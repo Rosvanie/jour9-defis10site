@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Éducatif - Tutoriels et Cours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <button class="navbar-toggler" onclick="toggleNavbar()">☰</button>
+            <ul>
+                <li><a href="#" class="nav-item">Accueil</a></li>
+                <li><a href="pages/tutoriel.html" class="nav-item">Tutoriels</a></li>
+                <li><a href="pages/cours.html" class="nav-item">Cours</a></li>
+                <li><a href="pages/article.html" class="nav-item">Articles</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+                <button class="close-btn" onclick="closeNavbar()">X</button> <!-- Close Button -->
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+    <!-- Section Héro avec Vidéo de Fond -->
+    <section class="hero">
+        <div class="video-background">
+            <video autoplay muted loop id="video-bg">
+                <source src="img/hero.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1>Apprenez de Manière Dynamique</h1>
+            <p>Découvrez des tutoriels captivants et des cours interactifs qui vous permettent de progresser rapidement.</p>
+            <a href="#tutoriels" class="btn-primary">Explorez maintenant</a>
+        </div>
+    </section>
+
+    <!-- Tutoriels Section avec Animation et Vidéo -->
+    <section id="tutoriels" class="section fade-in">
+        <h2 class="section-title">Tutoriels Vidéos</h2>
+        <div class="cards-container">
+            <!-- Tutoriel 1 -->
+            <div class="card">
+                <h3>HTML et CSS pour Débutants</h3>
+                <p>Les bases essentielles pour démarrer avec le développement web.</p>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="#" class="btn-secondary">Voir le tutoriel</a>
+            </div>
+            <!-- Tutoriel 2 -->
+            <div class="card">
+                <h3>Développement JavaScript</h3>
+                <p>Maîtrisez les bases du JavaScript avec des exercices interactifs.</p>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="#" class="btn-secondary">Voir le tutoriel</a>
+            </div>
+            <!-- Tutoriel 3 -->
+            <div class="card">
+                <h3>Introduction à React</h3>
+                <p>Explorez les concepts fondamentaux de React et développez des applications interactives.</p>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="#" class="btn-secondary">Voir le tutoriel</a>
+            </div>
+            <!-- Tutoriel 4 -->
+        </div>
+    </section>
+    
+
+    <!-- Cours Section avec Photos et Vidéos -->
+    <section id="cours" class="section fade-in">
+        <h2 class="section-title">Nos Cours Interactifs</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Apprendre Python</h3>
+                <img src="img/1.webp" alt="Python" class="card-img">
+                <p>Un cours interactif pour apprendre Python de A à Z.</p>
+                <a href="#" class="btn-secondary">Voir le cours</a>
+            </div>
+            <div class="card">
+                <h3>Développement Web Full Stack</h3>
+                <img src="img/2.jpg" alt="Développement Web" class="card-img">
+                <p>Un cours complet couvrant tous les aspects du développement web.</p>
+                <a href="#" class="btn-secondary">Voir le cours</a>
+            </div>
+            <div class="card">
+                <h3>Apprendre Python</h3>
+                <img src="img/3.jpg" alt="Python" class="card-img">
+                <p>Un cours interactif pour apprendre Python de A à Z.</p>
+                <a href="#" class="btn-secondary">Voir le cours</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Articles -->
+
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2 class="section-title">Nos Articles</h2>
+            <div class="article-cards">
+                <div class="article-card">
+                    <img src="img/art1.jpg" alt="Article 1">
+                    <h3>Article 1</h3>
+                    <p>Un aperçu captivant de cet article. Découvrez des astuces et des conseils pratiques...</p>
+                    <a href="#" class="read-more">Lire la suite</a>
+                </div>
+                <div class="article-card">
+                    <img src="img/art2.jpg" alt="Article 2">
+                    <h3>Article 2</h3>
+                    <p>Un aperçu captivant de cet article. Découvrez des astuces et des conseils pratiques...</p>
+                    <a href="#" class="read-more">Lire la suite</a>
+                </div>
+                <div class="article-card">
+                    <img src="img/art3.jpg" alt="Article 3">
+                    <h3>Article 3</h3>
+                    <p>Un aperçu captivant de cet article. Découvrez des astuces et des conseils pratiques...</p>
+                    <a href="#" class="read-more">Lire la suite</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- Formulaire d'Inscription à la Newsletter -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Inscrivez-vous à notre Newsletter</h2>
+        <p class="section-description">Recevez nos derniers tutoriels et mises à jour directement dans votre boîte mail.</p>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Votre email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Votre message (optionnel)"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">S'inscrire</button>
+        </form>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Site Éducatif. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

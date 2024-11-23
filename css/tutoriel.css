@@ -1,0 +1,83 @@
+@import url('reset.css');
+
+
+/* Styles pour la page Tutoriels */
+.tutoriels {
+    padding: 50px 50px;
+    background-color: #f4f7f6;
+    text-align: center;
+}
+
+.tutoriels .section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.tutoriel-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.tutoriel-item {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutoriel-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tutoriel-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tutoriel-item:hover .tutoriel-image {
+    transform: scale(1.1);
+}
+
+.tutoriel-content {
+    padding: 20px;
+}
+
+.tutoriel-item h3 {
+    font-size: 1.6rem;
+    color: #3e64ff;
+    margin-bottom: 10px;
+}
+
+.tutoriel-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3e64ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #ff8c00;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .tutoriel-item {
+        width: 100%;
+    }
+}
